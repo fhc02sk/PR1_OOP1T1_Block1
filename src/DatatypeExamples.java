@@ -45,13 +45,34 @@ public class DatatypeExamples {
         * a / b ...
         * a % b ...
         *  */
-        System.out.println("a + b = " + a + " + " + b + " = " );
+        int c1 = a + b;
+        int c2 = a - b;
+        int c3 = a * b;
+        System.out.println("a + b = " + a + " + " + b + " = " + c1);
+        System.out.println("a - b = " + a + " - " + b + " = " + c2);
+        System.out.println("a * b = " + a + " * " + b + " = " + c3);
+        System.out.println("a * b = " + a + " / " + b + " = " + (a / b));
+        System.out.println("a * b = " + a + " % " + b + " = " + (a % b));
 
         a = 11;
         b = 3;
-        System.out.println("a + b = " + a + " + " + b + " = " );
+        c = a + b;
+        System.out.println("a + b = " + a + " + " + b + " = " + c);
+        c = a - b;
+        System.out.println("a - b = " + a + " - " + b + " = " + c);
+        c = a * b;
+        System.out.println("a * b = " + a + " * " + b + " = " + c);
+        System.out.println("a * b = " + a + " / " + b + " = " + (a / b));
+        System.out.println("a * b = " + a + " % " + b + " = " + (a % b));
 
         // float x, y, result2; => kein modulo %
+        double x = 5, y = 3;
+        System.out.println("x + y = " + x + " + " + y + " = " + (x + y));
+        System.out.println("x - y = " + x + " - " + y + " = " + (x - y));
+        System.out.println("x * y = " + x + " * " + y + " = " + (x * y));
+        System.out.println("x / y = " + x + " / " + y + " = " + (x / y));
+        //  1.6666666
+        //  1.6666666666666667
     }
 
 }
