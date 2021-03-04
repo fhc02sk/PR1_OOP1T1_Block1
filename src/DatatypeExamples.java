@@ -31,6 +31,14 @@ public class DatatypeExamples {
         System.out.println("a = " + a);
 
         /*
+        a = 11
+        b = 3
+        a = 9
+        b = 5
+        float
+         */
+
+        /*
         * a + b = 4 + 5 = 9
         * a - b = 4 - 5 = -1
         * a * b ...
