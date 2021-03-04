@@ -21,6 +21,26 @@ public class BruttoNetto {
             System.out.println("Lieber User, diese Steuerklasse ist unbekannt");
         }
 
+        switch (tax_class){
+            case 1: // wenn tax_class == 1, dann mach diesen Fall
+                tax = 20;
+                break; // der Fall muss immer mit break abgeschlossen
+            case 2:
+                tax = 16;
+                break;
+            case 3:
+                tax = 8;
+                break;
+            default: // sonst/else
+                tax = 0;
+                System.out.println("Lieber User, diese Steuerklasse ist unbekannt");
+        }
+
+
+
+
+
+
         int schulnote = 4;
         int language = 1; /* 1 == Deutsch // 2 == Englisch)
         /* Sehr gut / Gut / Befriedigend / Genügend / Nicht Genügend */
