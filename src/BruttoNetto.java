@@ -42,32 +42,7 @@ public class BruttoNetto {
 
 
         int schulnote = 4;
-        int language = 1; /* 1 == Deutsch // 2 == Englisch)
-        /* Sehr gut / Gut / Befriedigend / Genügend / Nicht Genügend */
-        if (schulnote == 1 && language == 1) {
-            System.out.println("Note: Sehr Gut");
-        } else if (schulnote == 2 && language == 1) {
-            System.out.println("Note: Gute");
-        } else if (schulnote == 3 && language == 1) {
-            System.out.println("Note: Befriedigend");
-        } else if (schulnote == 4 && language == 1) {
-            System.out.println("Note: Genügend");
-        } else if (schulnote == 5 && language == 1) {
-            System.out.println("Note: Nicht Genügend");
-        } else if (schulnote == 1 && language == 2) {
-            System.out.println("Note: A");
-        } else if (schulnote == 2 && language == 2) {
-            System.out.println("Note: B");
-        } else if (schulnote == 3 && language == 2) {
-            System.out.println("Note: C");
-        } else if (schulnote == 4 && language == 2) {
-            System.out.println("Note: D");
-        } else if (schulnote == 5 && language == 2) {
-            System.out.println("Note: F");
-        }
-        else {
-            System.out.println("Falsche Note. Diesen Wert " + schulnote + " kennen wir nicht");
-        }
+
 
 
 
@@ -131,5 +106,47 @@ public class BruttoNetto {
         double grossPrice = netPrice + calculatedTax;
 
         System.out.println("grossPrice = " + grossPrice);
+
+        printNameToGrade(1);
+        printNameToGrade(3);
+        printNameToGrade(5);
+        printNameToGrade(4);
     }
+
+  //1. Stelle: public
+  //2. Stelle: static
+  //3. Stelle: Rückgabetyp: void/Datentyp
+  //4. Stelle: namen der Methode
+  //5. Stelle: In Klammern (Parameter)
+    public static void printNameToGrade(int grade){
+        // Ihr Aufgabe=> Namen für Schulnote auszugeben
+        int language = 1; /* 1 == Deutsch // 2 == Englisch)
+
+        /* Sehr gut / Gut / Befriedigend / Genügend / Nicht Genügend */
+        if (grade == 1 && language == 1) {
+            System.out.println("Note: Sehr Gut");
+        } else if (grade == 2 && language == 1) {
+            System.out.println("Note: Gute");
+        } else if (grade == 3 && language == 1) {
+            System.out.println("Note: Befriedigend");
+        } else if (grade == 4 && language == 1) {
+            System.out.println("Note: Genügend");
+        } else if (grade == 5 && language == 1) {
+            System.out.println("Note: Nicht Genügend");
+        } else if (grade == 1 && language == 2) {
+            System.out.println("Note: A");
+        } else if (grade == 2 && language == 2) {
+            System.out.println("Note: B");
+        } else if (grade == 3 && language == 2) {
+            System.out.println("Note: C");
+        } else if (grade == 4 && language == 2) {
+            System.out.println("Note: D");
+        } else if (grade == 5 && language == 2) {
+            System.out.println("Note: F");
+        }
+        else {
+            System.out.println("Falsche Note. Diesen Wert " + grade + " kennen wir nicht");
+        }
+    }
+
 }
