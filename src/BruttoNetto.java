@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class BruttoNetto {
     public static void main(String[] args) {
 
@@ -20,7 +22,33 @@ public class BruttoNetto {
         }
 
         int schulnote = 4;
+        int language = 1; /* 1 == Deutsch // 2 == Englisch)
         /* Sehr gut / Gut / Befriedigend / Genügend / Nicht Genügend */
+        if (schulnote == 1 && language == 1) {
+            System.out.println("Note: Sehr Gut");
+        } else if (schulnote == 2 && language == 1) {
+            System.out.println("Note: Gute");
+        } else if (schulnote == 3 && language == 1) {
+            System.out.println("Note: Befriedigend");
+        } else if (schulnote == 4 && language == 1) {
+            System.out.println("Note: Genügend");
+        } else if (schulnote == 5 && language == 1) {
+            System.out.println("Note: Nicht Genügend");
+        } else if (schulnote == 1 && language == 2) {
+            System.out.println("Note: A");
+        } else if (schulnote == 2 && language == 2) {
+            System.out.println("Note: B");
+        } else if (schulnote == 3 && language == 2) {
+            System.out.println("Note: C");
+        } else if (schulnote == 4 && language == 2) {
+            System.out.println("Note: D");
+        } else if (schulnote == 5 && language == 2) {
+            System.out.println("Note: F");
+        }
+        else {
+            System.out.println("Falsche Note. Diesen Wert " + schulnote + " kennen wir nicht");
+        }
+
 
 
         double calculatedTax = (netPrice * tax) / 100;
